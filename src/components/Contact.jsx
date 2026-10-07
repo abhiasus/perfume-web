@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 function Contact() {
   return (
@@ -13,10 +14,7 @@ function Contact() {
       <section className="contact-section py-5">
         <div className="container">
           <div className="row g-5">
-            <div
-              className="col-lg-5"
-              data-aos="fade-right"
-            >
+            <div className="col-lg-5" data-aos="fade-right">
               <p className="gold-title">CONTACT ÉLAN</p>
 
               <h2>Let's Talk Fragrance</h2>
@@ -47,10 +45,7 @@ function Contact() {
               </div>
             </div>
 
-            <div
-              className="col-lg-7"
-              data-aos="fade-left"
-            >
+            <div className="col-lg-7" data-aos="fade-left">
               <div className="contact-form">
                 <input
                   type="text"
@@ -78,9 +73,7 @@ function Contact() {
 
                 <button
                   className="btn perfume-btn"
-                  onClick={() =>
-                    alert("Message sent successfully!")
-                  }
+                  onClick={() => alert("Message sent successfully!")}
                 >
                   Send Message
                 </button>
@@ -103,11 +96,11 @@ function Footer() {
         <p>Luxury fragrances for unforgettable moments.</p>
 
         <div className="footer-links">
-          <a href="/">Home</a>
-          <a href="/about">About</a>
-          <a href="/products">Products</a>
-          <a href="/cart">Cart</a>
-          <a href="/contact">Contact</a>
+          <Link to="/">Home</Link>
+          <Link to="/about">About</Link>
+          <Link to="/products">Products</Link>
+          <Link to="/cart">Cart</Link>
+          <Link to="/contact">Contact</Link>
         </div>
 
         <div className="footer-bottom">

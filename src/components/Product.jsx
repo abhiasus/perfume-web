@@ -1,37 +1,21 @@
 import React from "react";
+import { Link } from "react-router-dom";
+
+import perfume1 from "../assets/images/perfume1.jpg";
+import perfume2 from "../assets/images/perfume2.jpg";
+import perfume3 from "../assets/images/perfume3.jpg";
+import perfume4 from "../assets/images/perfume4.jpg";
+import perfume5 from "../assets/images/perfume5.jpg";
+import perfume6 from "../assets/images/perfume6.jpg";
 
 function Product() {
   const products = [
-    {
-      name: "Velvet Rose",
-      price: "₹2,499",
-      image: "/src/assets/images/perfume1.jpg"
-    },
-    {
-      name: "Golden Oud",
-      price: "₹3,299",
-      image: "/src/assets/images/perfume2.jpg"
-    },
-    {
-      name: "Midnight Noir",
-      price: "₹2,899",
-      image: "/src/assets/images/perfume3.jpg"
-    },
-    {
-      name: "Royal Bloom",
-      price: "₹2,199",
-      image: "/src/assets/images/perfume4.jpg"
-    },
-    {
-      name: "Amber Mist",
-      price: "₹2,699",
-      image: "/src/assets/images/perfume5.jpg"
-    },
-    {
-      name: "Pure Essence",
-      price: "₹1,999",
-      image: "/src/assets/images/perfume6.jpg"
-    }
+    { name: "Velvet Rose", price: "₹2,499", image: perfume1 },
+    { name: "Golden Oud", price: "₹3,299", image: perfume2 },
+    { name: "Midnight Noir", price: "₹2,899", image: perfume3 },
+    { name: "Royal Bloom", price: "₹2,199", image: perfume4 },
+    { name: "Amber Mist", price: "₹2,699", image: perfume5 },
+    { name: "Pure Essence", price: "₹1,999", image: perfume6 }
   ];
 
   return (
@@ -54,10 +38,7 @@ function Product() {
                 data-aos-delay={index * 100}
               >
                 <div className="perfume-card">
-                  <img
-                    src={product.image}
-                    alt={product.name}
-                  />
+                  <img src={product.image} alt={product.name} />
 
                   <div className="perfume-card-body">
                     <h3>{product.name}</h3>
@@ -67,9 +48,7 @@ function Product() {
                     <button
                       className="btn perfume-card-btn"
                       onClick={() =>
-                        console.log(
-                          product.name + " added to cart"
-                        )
+                        console.log(product.name + " added to cart")
                       }
                     >
                       Add to Cart
@@ -95,11 +74,11 @@ function Footer() {
         <p>Luxury fragrances for unforgettable moments.</p>
 
         <div className="footer-links">
-          <a href="/">Home</a>
-          <a href="/about">About</a>
-          <a href="/products">Products</a>
-          <a href="/cart">Cart</a>
-          <a href="/contact">Contact</a>
+          <Link to="/">Home</Link>
+          <Link to="/about">About</Link>
+          <Link to="/products">Products</Link>
+          <Link to="/cart">Cart</Link>
+          <Link to="/contact">Contact</Link>
         </div>
 
         <div className="footer-bottom">

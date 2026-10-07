@@ -1,37 +1,22 @@
 import React from "react";
+import { Link } from "react-router-dom";
+
+import hero from "../assets/images/hero.jpg";
+import perfume1 from "../assets/images/perfume1.jpg";
+import perfume2 from "../assets/images/perfume2.jpg";
+import perfume3 from "../assets/images/perfume3.jpg";
+import perfume4 from "../assets/images/perfume4.jpg";
+import perfume5 from "../assets/images/perfume5.jpg";
+import perfume6 from "../assets/images/perfume6.jpg";
 
 function Home() {
   const perfumes = [
-    {
-      name: "Velvet Rose",
-      image: "/src/assets/images/perfume1.jpg",
-      price: "₹2,499"
-    },
-    {
-      name: "Golden Oud",
-      image: "/src/assets/images/perfume2.jpg",
-      price: "₹3,299"
-    },
-    {
-      name: "Midnight Noir",
-      image: "/src/assets/images/perfume3.jpg",
-      price: "₹2,899"
-    },
-    {
-      name: "Royal Bloom",
-      image: "/src/assets/images/perfume4.jpg",
-      price: "₹2,199"
-    },
-    {
-      name: "Amber Mist",
-      image: "/src/assets/images/perfume5.jpg",
-      price: "₹2,699"
-    },
-    {
-      name: "Pure Essence",
-      image: "/src/assets/images/perfume6.jpg",
-      price: "₹1,999"
-    }
+    { name: "Velvet Rose", image: perfume1, price: "₹2,499" },
+    { name: "Golden Oud", image: perfume2, price: "₹3,299" },
+    { name: "Midnight Noir", image: perfume3, price: "₹2,899" },
+    { name: "Royal Bloom", image: perfume4, price: "₹2,199" },
+    { name: "Amber Mist", image: perfume5, price: "₹2,699" },
+    { name: "Pure Essence", image: perfume6, price: "₹1,999" }
   ];
 
   return (
@@ -53,17 +38,13 @@ function Home() {
                 personality and leave a lasting impression.
               </p>
 
-              <a href="/products" className="btn perfume-btn">
+              <Link to="/products" className="btn perfume-btn">
                 Shop Perfumes
-              </a>
+              </Link>
             </div>
 
             <div className="col-lg-6" data-aos="fade-left">
-              <img
-                src="/src/assets/images/hero.jpg"
-                className="hero-image"
-                alt="Luxury perfume"
-              />
+              <img src={hero} className="hero-image" alt="Luxury perfume" />
             </div>
           </div>
         </div>
@@ -74,9 +55,7 @@ function Home() {
           <div className="section-heading text-center" data-aos="fade-up">
             <p>OUR COLLECTION</p>
             <h2>Top Perfumes</h2>
-            <span>
-              Explore our most loved fragrances
-            </span>
+            <span>Explore our most loved fragrances</span>
           </div>
 
           <div className="row g-4 mt-4">
@@ -88,22 +67,16 @@ function Home() {
                 data-aos-delay={index * 100}
               >
                 <div className="perfume-card">
-                  <img
-                    src={perfume.image}
-                    alt={perfume.name}
-                  />
+                  <img src={perfume.image} alt={perfume.name} />
 
                   <div className="perfume-card-body">
                     <h3>{perfume.name}</h3>
                     <p>Luxury fragrance collection</p>
                     <h4>{perfume.price}</h4>
 
-                    <a
-                      href="/cart"
-                      className="btn perfume-card-btn"
-                    >
+                    <Link to="/cart" className="btn perfume-card-btn">
                       Add to Cart
-                    </a>
+                    </Link>
                   </div>
                 </div>
               </div>
@@ -114,10 +87,7 @@ function Home() {
 
       <section className="experience-section">
         <div className="container">
-          <div
-            className="experience-box"
-            data-aos="zoom-in"
-          >
+          <div className="experience-box" data-aos="zoom-in">
             <p>THE ÉLAN EXPERIENCE</p>
             <h2>Find A Fragrance That Feels Like You</h2>
             <span>
@@ -127,9 +97,9 @@ function Home() {
 
             <br />
 
-            <a href="/about" className="btn perfume-btn mt-4">
+            <Link to="/about" className="btn perfume-btn mt-4">
               Explore Our Story
-            </a>
+            </Link>
           </div>
         </div>
       </section>
@@ -146,18 +116,15 @@ function Footer() {
         <div className="row text-center text-md-start">
           <div className="col-md-4 mb-4">
             <h3>ÉLAN PERFUMES</h3>
-            <p>
-              Luxury fragrances crafted for unforgettable
-              moments.
-            </p>
+            <p>Luxury fragrances crafted for unforgettable moments.</p>
           </div>
 
           <div className="col-md-4 mb-4">
             <h4>Quick Links</h4>
-            <a href="/">Home</a>
-            <a href="/about">About</a>
-            <a href="/products">Products</a>
-            <a href="/contact">Contact</a>
+            <Link to="/">Home</Link>
+            <Link to="/about">About</Link>
+            <Link to="/products">Products</Link>
+            <Link to="/contact">Contact</Link>
           </div>
 
           <div className="col-md-4 mb-4">

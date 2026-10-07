@@ -1,4 +1,7 @@
 import React from "react";
+import { Link } from "react-router-dom";
+
+import perfume4 from "../assets/images/perfume4.jpg";
 
 function About() {
   return (
@@ -15,7 +18,7 @@ function About() {
           <div className="row align-items-center g-5">
             <div className="col-lg-6" data-aos="fade-right">
               <img
-                src="/src/assets/images/perfume4.jpg"
+                src={perfume4}
                 className="about-image"
                 alt="Perfume collection"
               />
@@ -61,11 +64,11 @@ function Footer() {
             <p>Luxury fragrances for every personality.</p>
 
             <div className="footer-links">
-              <a href="/">Home</a>
-              <a href="/about">About</a>
-              <a href="/products">Products</a>
-              <a href="/cart">Cart</a>
-              <a href="/contact">Contact</a>
+              <Link to="/">Home</Link>
+              <Link to="/about">About</Link>
+              <Link to="/products">Products</Link>
+              <Link to="/cart">Cart</Link>
+              <Link to="/contact">Contact</Link>
             </div>
 
             <div className="footer-bottom">
