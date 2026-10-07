@@ -1,0 +1,517 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f8f4ef;
+  color: #2d211c;
+}
+
+/* ================= NAVBAR ================= */
+
+.perfume-navbar {
+  background-color: #211713;
+  padding: 18px 0;
+}
+
+.navbar-brand {
+  color: #d8b27c !important;
+  font-size: 25px;
+  font-weight: bold;
+  letter-spacing: 2px;
+}
+
+.navbar-brand span {
+  color: white;
+  font-size: 12px;
+  display: block;
+  letter-spacing: 4px;
+}
+
+.navbar-nav {
+  gap: 22px;
+}
+
+.nav-link {
+  color: white !important;
+  font-size: 16px;
+}
+
+.nav-link:hover {
+  color: #d8b27c !important;
+}
+
+.navbar-toggler {
+  border: 1px solid #d8b27c;
+}
+
+.navbar-toggler-icon {
+  filter: invert(1);
+}
+
+/* ================= HERO ================= */
+
+.hero-section {
+  margin-top: 35px;
+  padding: 70px 0;
+  min-height: 650px;
+  display: flex;
+  align-items: center;
+  background-color: #eee5dc;
+}
+
+.hero-small {
+  color: #a37b45;
+  letter-spacing: 3px;
+  font-size: 14px;
+  font-weight: bold;
+}
+
+.hero-section h1 {
+  font-size: 65px;
+  line-height: 1.1;
+  margin: 20px 0;
+  font-weight: 700;
+}
+
+.hero-section h1 span {
+  color: #a37b45;
+}
+
+.hero-text {
+  max-width: 500px;
+  line-height: 1.8;
+  color: #665b55;
+  margin-bottom: 30px;
+}
+
+.hero-image {
+  width: 100%;
+  height: 520px;
+  object-fit: cover;
+  object-position: center;
+  display: block;
+}
+
+/* ================= BUTTON ================= */
+
+.perfume-btn {
+  background-color: #a37b45;
+  color: white;
+  border: none;
+  padding: 13px 30px;
+  border-radius: 0;
+}
+
+.perfume-btn:hover {
+  background-color: #211713;
+  color: white;
+}
+
+/* ================= SECTION HEADING ================= */
+
+.section-heading {
+  margin-bottom: 30px;
+}
+
+.section-heading p,
+.page-banner p,
+.gold-title {
+  color: #a37b45;
+  letter-spacing: 3px;
+  font-size: 14px;
+  font-weight: bold;
+}
+
+.section-heading h2 {
+  font-size: 42px;
+  margin: 10px 0;
+}
+
+.section-heading span {
+  color: #756b65;
+}
+
+/* ================= PERFUME CARDS ================= */
+
+.perfume-card {
+  background-color: white;
+  overflow: hidden;
+  height: 100%;
+  transition: 0.3s;
+  border: 1px solid #eee;
+}
+
+.perfume-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.12);
+}
+
+/* ANY IMAGE SIZE WILL FIT HERE */
+
+.perfume-card img {
+  width: 100%;
+  height: 350px;
+  object-fit: contain;
+  object-position: center;
+  display: block;
+  background-color: #f8f4ef;
+}
+
+.perfume-card-body {
+  padding: 25px;
+  text-align: center;
+}
+
+.perfume-card-body h3 {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.perfume-card-body p {
+  color: #777;
+}
+
+.perfume-card-body h4 {
+  color: #a37b45;
+  margin: 15px 0;
+}
+
+.perfume-card-btn {
+  border: 1px solid #a37b45;
+  color: #a37b45;
+  padding: 10px 25px;
+}
+
+.perfume-card-btn:hover {
+  background-color: #a37b45;
+  color: white;
+}
+
+/* ================= EXPERIENCE ================= */
+
+.experience-section {
+  padding: 80px 0;
+  background-color: #211713;
+}
+
+.experience-box {
+  text-align: center;
+  color: white;
+  padding: 40px;
+}
+
+.experience-box p {
+  color: #d8b27c;
+  letter-spacing: 3px;
+}
+
+.experience-box h2 {
+  font-size: 42px;
+  margin: 15px 0;
+}
+
+.experience-box span {
+  color: #c8c0bb;
+}
+
+/* ================= PAGE BANNER ================= */
+
+.page-banner {
+  margin-top: 35px;
+  padding: 90px 0;
+  background-color: #eee5dc;
+}
+
+.page-banner h1 {
+  font-size: 55px;
+  margin-top: 15px;
+}
+
+/* ================= ABOUT ================= */
+
+.about-section {
+  padding: 80px 0;
+}
+
+.about-image {
+  width: 100%;
+  height: 500px;
+  object-fit: cover;
+  object-position: center;
+  display: block;
+}
+
+.about-section h2 {
+  font-size: 45px;
+  margin: 15px 0 25px;
+}
+
+.about-section p {
+  line-height: 1.8;
+  color: #655c57;
+}
+
+/* ================= PRODUCTS ================= */
+
+.products-section {
+  padding: 70px 0;
+}
+
+/* ================= CART ================= */
+
+.cart-section {
+  padding: 70px 0;
+}
+
+.cart-box {
+  background-color: white;
+  padding: 25px;
+  margin-bottom: 30px;
+}
+
+.cart-image {
+  width: 150px;
+  height: 150px;
+  object-fit: contain;
+  object-position: center;
+  background-color: #f8f4ef;
+  display: block;
+}
+
+.cart-box h4 {
+  color: #a37b45;
+}
+
+.remove-btn {
+  border: 1px solid #a37b45;
+  color: #a37b45;
+}
+
+.remove-btn:hover {
+  background-color: #a37b45;
+  color: white;
+}
+
+.cart-total {
+  text-align: right;
+}
+
+/* ================= CONTACT ================= */
+
+.contact-section {
+  padding: 80px 0;
+}
+
+.contact-section h2 {
+  font-size: 45px;
+  margin: 15px 0 25px;
+}
+
+.contact-section p {
+  line-height: 1.8;
+  color: #655c57;
+}
+
+.contact-info {
+  margin-top: 30px;
+}
+
+.contact-form {
+  background-color: white;
+  padding: 35px;
+}
+
+.contact-form .form-control {
+  margin-bottom: 20px;
+  padding: 14px;
+  border-radius: 0;
+  border: 1px solid #ddd;
+}
+
+.contact-form .form-control:focus {
+  border-color: #a37b45;
+  box-shadow: none;
+}
+
+/* ================= FOOTER ================= */
+
+.footer {
+  background-color: #211713;
+  color: white;
+  padding: 60px 0 20px;
+}
+
+.footer h3 {
+  color: #d8b27c;
+  letter-spacing: 2px;
+}
+
+.footer h4 {
+  margin-bottom: 20px;
+}
+
+.footer p {
+  color: #c8c0bb;
+}
+
+.footer a {
+  color: #c8c0bb;
+  text-decoration: none;
+  display: block;
+  margin: 8px 0;
+}
+
+.footer a:hover {
+  color: #d8b27c;
+}
+
+.footer-links {
+  display: flex;
+  justify-content: center;
+  gap: 25px;
+  margin: 25px 0;
+}
+
+.footer-links a {
+  display: inline-block;
+}
+
+.footer-bottom {
+  border-top: 1px solid #493b34;
+  padding-top: 20px;
+  margin-top: 30px;
+  text-align: center;
+}
+
+/* ================= TABLET ================= */
+
+@media (max-width: 991px) {
+
+  .navbar-nav {
+    gap: 5px;
+    margin-top: 15px;
+    text-align: center;
+  }
+
+  .hero-section {
+    margin-top: 25px;
+    padding: 50px 0;
+  }
+
+  .hero-section h1 {
+    font-size: 48px;
+  }
+
+  .hero-image {
+    margin-top: 40px;
+    height: 450px;
+  }
+}
+
+/* ================= MOBILE ================= */
+
+@media (max-width: 767px) {
+
+  .hero-section {
+    margin-top: 20px;
+    padding: 50px 0;
+    text-align: center;
+  }
+
+  .hero-section h1 {
+    font-size: 42px;
+  }
+
+  .hero-text {
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .hero-image {
+    height: 400px;
+    margin-top: 35px;
+  }
+
+  .section-heading h2 {
+    font-size: 34px;
+  }
+
+  .page-banner {
+    margin-top: 20px;
+    padding: 60px 0;
+  }
+
+  .page-banner h1 {
+    font-size: 40px;
+  }
+
+  .about-section h2,
+  .contact-section h2 {
+    font-size: 35px;
+  }
+
+  .cart-box {
+    text-align: center;
+  }
+
+  .cart-image {
+    margin: 0 auto 20px;
+  }
+
+  .cart-total {
+    text-align: center;
+  }
+
+  /* CENTER FOOTER ON MOBILE */
+
+  .footer {
+    text-align: center;
+  }
+
+  .footer .row {
+    text-align: center;
+  }
+
+  .footer-links {
+    flex-direction: column;
+    gap: 5px;
+    align-items: center;
+  }
+
+  .footer-links a {
+    display: block;
+  }
+
+  .footer-bottom {
+    text-align: center;
+  }
+}
+
+/* ================= SMALL MOBILE ================= */
+
+@media (max-width: 480px) {
+
+  .hero-section h1 {
+    font-size: 35px;
+  }
+
+  .hero-image {
+    height: 330px;
+  }
+
+  .perfume-card img {
+    height: 300px;
+  }
+
+  .experience-box h2 {
+    font-size: 30px;
+  }
+
+  .contact-form {
+    padding: 20px;
+  }
+}
