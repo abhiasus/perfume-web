@@ -1,5 +1,5 @@
 import React, { useEffect } from "react";
-import { BrowserRouter, Routes, Route } from "react-router-dom";
+import { HashRouter, Routes, Route, Link } from "react-router-dom";
 import AOS from "aos";
 
 import Home from "./components/Home";
@@ -17,12 +17,12 @@ function App() {
   }, []);
 
   return (
-    <BrowserRouter>
+    <HashRouter>
       <nav className="navbar navbar-expand-lg perfume-navbar">
         <div className="container">
-          <a className="navbar-brand" href="/">
+          <Link className="navbar-brand" to="/">
             ÉLAN <span>PERFUMES</span>
-          </a>
+          </Link>
 
           <button
             className="navbar-toggler"
@@ -39,33 +39,19 @@ function App() {
           <div className="collapse navbar-collapse" id="perfumeNav">
             <ul className="navbar-nav ms-auto">
               <li className="nav-item">
-                <a className="nav-link" href="/">
-                  Home
-                </a>
+                <Link className="nav-link" to="/">Home</Link>
               </li>
-
               <li className="nav-item">
-                <a className="nav-link" href="/about">
-                  About
-                </a>
+                <Link className="nav-link" to="/about">About</Link>
               </li>
-
               <li className="nav-item">
-                <a className="nav-link" href="/products">
-                  Products
-                </a>
+                <Link className="nav-link" to="/products">Products</Link>
               </li>
-
               <li className="nav-item">
-                <a className="nav-link" href="/cart">
-                  Cart
-                </a>
+                <Link className="nav-link" to="/cart">Cart</Link>
               </li>
-
               <li className="nav-item">
-                <a className="nav-link" href="/contact">
-                  Contact
-                </a>
+                <Link className="nav-link" to="/contact">Contact</Link>
               </li>
             </ul>
           </div>
@@ -79,7 +65,7 @@ function App() {
         <Route path="/cart" element={<Cart />} />
         <Route path="/contact" element={<Contact />} />
       </Routes>
-    </BrowserRouter>
+    </HashRouter>
   );
 }
 
